@@ -2,13 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/ico" href="http://santapim.com/PepePiM.png">
 <script src="./xxxxxxxxxxx_files/title.js.download"></script>
-<style>
-    p {
-font-size: 40px;
-margin:0;
-letter-spacing:3px;
-    }
-</style></head>
+</head>
 
 <body oncontextmenu="return false;" unselectable="on" onselectstart="return false;"><canvas width="715" height="974"></canvas>
  
@@ -39,7 +33,13 @@ $(document).on("keydown", disableF5);
 </script>
 <style>
 
-    
+p {
+    font-size: 4em;
+    margin:0;
+    font-weight: 700;
+    letter-spacing:3px;
+    }
+
 body{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;
 
 
@@ -93,15 +93,7 @@ color: inherit;
             
         }
 
-        /* Адаптивность */
-        @media (max-width: 600px) {
-            .link {
-                flex: 1 1 100%; /* Ссылки будут занимать всю ширину контейнера на маленьких экранах */
-                max-width: 100%;
-                text-align: center;
-            }
-        }
-
+       
 .center {
 font-family: 'Roobert', sans-serif;
 
@@ -118,6 +110,24 @@ font-family: 'Roobert', sans-serif;
 }
 
 
+ /* Адаптивность */
+ @media (max-width: 600px)  {
+            .link {
+                flex: 1 1 100%; /* Ссылки будут занимать всю ширину контейнера на маленьких экранах */
+                max-width: 100%;
+                text-align: center;
+            }
+        
+        p {
+                font-size: 3em; /* Уменьшенный размер шрифта на маленьких экранах */
+            }
+        
+        }
+        @media (max-width: 400px) {
+            p {
+                font-size: 2em; /* Еще меньший размер шрифта на очень маленьких экранах */
+            }
+        }
 
 
 @keyframes fadein {
@@ -157,7 +167,7 @@ font-family: 'Roobert', sans-serif;
 
 <div class="center">
     <div>
-        <p style="font-weight: 700; font-size: 4em; line-height: 1.1; text-align: left; margin-top: 200px;" >STAX - ЭТО НЕ ПРОСТО МЕРЧ</p>
+        <p style=" line-height: 1.1; text-align: left; margin-top: 200px;">STAX - ЭТО НЕ ПРОСТО МЕРЧ</p>
     </div>
     <div id="pp" style="cursor: pointer; letter-spacing: 5px; font-size: 14px; margin-top: 10px; text-align: center;" onclick="pVid();">play/pause</div>
 
