@@ -97,9 +97,8 @@ color: inherit;
 .center {
 font-family: 'Roobert', sans-serif;
 
-
   position: absolute; /* or absolute */
-  top: 30%;
+  top: 46%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
@@ -107,6 +106,66 @@ font-family: 'Roobert', sans-serif;
     -moz-animation: fadein 3s; /* Firefox */
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
+}
+
+.Index_buttons_scroll__WWNjK {
+    -ms-overflow-style: none;
+    display: flex;
+    position: relative;
+    left: -28px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    width: calc(100% + 56px);
+    max-width: calc(100% + 56px);
+    height: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none
+}
+.Index_button__KkGoY {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #1f1f1f;
+    border-radius: 25px;
+    background: #fff;
+    padding: 0 30px;
+    height: 50px;
+    color: #1f1f1f;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 160%;
+    white-space: nowrap
+}
+.Index_button__KkGoY.Index_active__noKv0 {
+    background: #1f1f1f;
+    color: #fff
+}
+.Index_button__KkGoY.Index_active__noKv0 .Index_icon__h_IwE {
+    color: #fff
+}
+
+
+.Index_button_wrapper__FG4Rc:first-child {
+    padding-left: 28px
+}
+
+.Index_button_wrapper__FG4Rc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right: 0;
+    padding-left: 16px
 }
 
 
@@ -167,7 +226,7 @@ font-family: 'Roobert', sans-serif;
 
 <div class="center">
     <div>
-        <p style=" line-height: 1.1; text-align: left; margin-top: 200px;">STAX - ЭТО НЕ ПРОСТО МЕРЧ</p>
+        <p style=" line-height: 1.1; text-align: left;">STAX - ЭТО НЕ ПРОСТО МЕРЧ</p>
     </div>
     <div id="pp" style="cursor: pointer; letter-spacing: 5px; font-size: 14px; margin-top: 10px; box-sizing: border-box; width: min-content;" onclick="pVid();">play/pause</div>
 
@@ -175,6 +234,18 @@ font-family: 'Roobert', sans-serif;
         <a href="" target="_blank" class="link">Запустить STAX</a>
         <a href="" target="_blank" class="link">Открыть магазин</a>
     </div>
+    <h3 style="font-size: 30px; padding-top: 25px;">Развитие</h3>
+    <div class="Index_buttons_scroll__WWNjK">
+    <div class="Index_button_wrapper__FG4Rc">
+        <button class="Index_button__KkGoY __className_406e58 Index_active__noKv0">
+            <svg class="Index_icon__h_IwE" viewBox="0 0 20 20">
+                <use href=""></use></svg>Выполнено</button></div>
+                <div class="Index_button_wrapper__FG4Rc">
+                    <button class="Index_button__KkGoY __className_406e58">
+                        <svg class="Index_icon__h_IwE" viewBox="0 0 20 20">
+                            <use href=""></use></svg>Функционал</button></div>
+                            <div class="Index_button_wrapper__FG4Rc"><button class="Index_button__KkGoY __className_406e58">
+                                <svg class="Index_icon__h_IwE" viewBox="0 0 20 20"><use href=""></use></svg>Тестирование</button></div></div>
 
 </div>
 
